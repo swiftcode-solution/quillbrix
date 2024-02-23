@@ -51,8 +51,8 @@ function Home() {
           <Flex justify="between" direction={{ initial: "column", sm: "row" }}>
             <Flex direction="column" gap="9">
               <HeadingCommon>OUR SERVICE</HeadingCommon>
-              <ButtonCommon className={styles.exploreMoreButton}>
-                Explore More
+              <ButtonCommon>
+                <Link href="/services">Explore More</Link>
               </ButtonCommon>
               <img src="/home/home-page-1.png" height={300} alt="home-page" />
             </Flex>
