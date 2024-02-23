@@ -1,0 +1,15 @@
+.detailsList {
+  padding-left: 0px;
+  li {
+    list-style: none;
+    margin-bottom: 30px;
+    list-style-position: inside;
+
+    svg {
+      height: 2em;
+      width: 2em;
+      vertical-align: bottom;
+      margin-right: 20px;
+    }
+  }
+}

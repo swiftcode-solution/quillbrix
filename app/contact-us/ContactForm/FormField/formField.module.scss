@@ -1,0 +1,9 @@
+.formMessage {
+  color: var(--red-10);
+}
+
+.formLabel {
+  color: var(--black-a12);
+  transition: color 0.3s ease-in-out;
+  margin-bottom: 10px;
+}

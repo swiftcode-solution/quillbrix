@@ -1,0 +1,13 @@
+.link {
+  text-decoration: none;
+  padding-top: 5px;
+  color: var(--black-10);
+
+  &:hover {
+    color: var(--accent-9);
+  }
+}
+
+.activeLink {
+  border-bottom: 2px solid var(--accent-9);
+}

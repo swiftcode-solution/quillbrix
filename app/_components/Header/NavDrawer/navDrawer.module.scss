@@ -1,0 +1,15 @@
+.mobileDrawer {
+  $height: calc(100dvh - var(--main-nav-height));
+
+  position: fixed;
+  width: 70%;
+  right: 0;
+  top: var(--main-nav-height);
+  overflow-y: auto;
+  max-height: $height;
+  min-height: $height;
+  z-index: 100;
+  height: $height;
+  background-color: var(--color-background);
+  transition: transform 500ms ease;
+}

@@ -1,0 +1,35 @@
+.header {
+  position: sticky;
+  width: 100%;
+  height: var(--main-nav-height);
+  top: 0;
+  z-index: 2;
+  background-color: var(--color-background);
+  box-shadow: 0px 6px 7px 1px rgba(209, 209, 209, 0.4);
+  padding: 10px 0px;
+}
+
+.section {
+  height: 100%;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobileDrawer {
+  $height: calc(100dvh - var(--main-nav-height));
+
+  position: fixed;
+  width: 100%;
+  right: 0;
+  top: var(--main-nav-height);
+  overflow-y: auto;
+  max-height: $height;
+  min-height: $height;
+  z-index: 100;
+  height: $height;
+  background-color: var(--color-background);
+  transition: transform 500ms ease;
+}

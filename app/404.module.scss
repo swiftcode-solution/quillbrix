@@ -1,0 +1,7 @@
+.main {
+  height: calc(100dvh - var(--main-nav-height));
+}
+
+.heading {
+  font-size: clamp(100px, 10vw, 200px);
+}

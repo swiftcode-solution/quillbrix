@@ -1,0 +1,37 @@
+.footer {
+  background-color: black;
+
+  span,
+  p,
+  h {
+    color: var(--color-background);
+  }
+}
+
+.contactHeading {
+  color: var(--color-background);
+  letter-spacing: 5px !important;
+}
+
+.separator {
+  background-color: white !important;
+}
+
+.socialIcons {
+  svg {
+    fill: white;
+  }
+}
+
+.buttonContainer {
+  button {
+    color: var(--color-background);
+    border: 0.7px solid white;
+  }
+}
+
+.privacyLinks {
+  a {
+    color: var(--color-background);
+  }
+}
