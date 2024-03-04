@@ -19,8 +19,9 @@
     "react-use": "^17.5.0"
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "^14.0.4",
     "eslint": "^8",
-    "eslint-config-next": "13.5.4",
+    "eslint-config-next": "14.0.4",
     "eslint-import-resolver-alias": "^1.1.2"
   }
 }

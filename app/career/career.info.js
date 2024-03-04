@@ -8,21 +8,25 @@ export const vacanyList = [
     title: "Senior Blockchain Developer",
     duration: "2+ Years",
     number: "2",
+    id: "1",
+  },
+  {
+    title: "Senior Fullstack Developer",
+    duration: "2+ Years",
+    number: "2",
+    id: "2",
+  },
+  {
+    title: "Junior Frontend Developer",
+    duration: "2+ Years",
+    number: "2",
+    id: "3",
   },
   {
     title: "Senior Blockchain Developer",
     duration: "2+ Years",
     number: "2",
-  },
-  {
-    title: "Senior Blockchain Developer",
-    duration: "2+ Years",
-    number: "2",
-  },
-  {
-    title: "Senior Blockchain Developer",
-    duration: "2+ Years",
-    number: "2",
+    id: "4",
   },
 ];
 

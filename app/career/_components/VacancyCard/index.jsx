@@ -3,7 +3,7 @@ import { Card, Flex, Text } from "@radix-ui/themes";
 import ButtonCommon from "@/components/ButtonCommon";
 import styles from "./vacancyCard.module.scss";
 
-function VacancyCard({ title, duration, number }) {
+function VacancyCard({ title, duration, number, id }) {
   return (
     <Card className={styles.card}>
       <Flex
@@ -19,7 +19,7 @@ function VacancyCard({ title, duration, number }) {
           <Text weight="medium">No. of Vacancies : </Text> {number}
         </Text>
         <ButtonCommon>
-          <Link href="/career/fa">Apply Now</Link>
+          <Link href={`/career/${id}`}>Apply Now</Link>
         </ButtonCommon>
       </Flex>
     </Card>

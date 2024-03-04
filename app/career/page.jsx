@@ -46,12 +46,13 @@ function Career() {
             justify="center"
             align="center"
           >
-            {vacanyList.map(({ title, duration, number }, index) => (
+            {vacanyList.map(({ title, duration, number, id }, index) => (
               <VacancyCard
                 title={title}
                 duration={duration}
                 number={number}
                 key={index}
+                id={id}
               />
             ))}
           </Grid>

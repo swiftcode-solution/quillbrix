@@ -35,7 +35,11 @@ function Footer() {
               <Text>Quick Links</Text>
               <Flex gap="3" className={styles.buttonContainer} wrap="wrap">
                 {pageLinks.map(({ title, href }, index) => (
-                  <ButtonCommon variant="outline" key={index}>
+                  <ButtonCommon
+                    variant="outline"
+                    key={index}
+                    className={styles.pageLinks}
+                  >
                     <Link href={href}>{title}</Link>
                   </ButtonCommon>
                 ))}

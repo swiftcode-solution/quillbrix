@@ -1,4 +1,4 @@
-export const details = [
+export const vacancyDetails = [
   "Bachelor's degree in computer science, information technology or related field.",
   "Experience with server hardware and software, operating systems (Windows, Linux and Mac), and scripting languages (e.g. PowerShell, Bash)",
   "Strong analytical and problem-solving skills, with the ability to troubleshoot and resolve complex technical issues.",

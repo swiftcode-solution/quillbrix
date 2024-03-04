@@ -6,7 +6,7 @@ import "@/styles/global.scss";
 import Footer from "./_components/Footer";
 
 export const metadata = {
-  title: "Quilldrix",
+  title: "Quillbrix",
   description: "",
 };
 

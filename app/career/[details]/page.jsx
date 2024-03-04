@@ -1,10 +1,15 @@
 import { Flex, Heading, Separator, Text } from "@radix-ui/themes";
 import SectionCommon from "@/components/SectionCommon";
 import CheckIcon from "@/public/assets/CheckIcon";
-import { details } from "./details.info";
+import { vacanyList } from "../career.info";
+import { vacancyDetails } from "./details.info";
 import styles from "./details.module.scss";
 
-function VacancyDetails() {
+function VacancyDetails({ params }) {
+  const { details } = params;
+
+  const vacancyData = vacanyList.find(({ id }) => id === details);
+
   return (
     <main>
       <SectionCommon>
@@ -16,26 +21,26 @@ function VacancyDetails() {
               sm: "9",
             }}
           >
-            FULL STACK DEVELOPER
+            {vacancyData.title}
           </Heading>
           <Text size="6">
             <Text mr="6" weight="medium">
               Experience
             </Text>
-            4+ Years
+            {vacancyData.duration}
           </Text>
           <Text size="6">
             <Text mr="6" weight="medium">
               Positions
             </Text>
-            1
+            {vacancyData.number}
           </Text>
         </Flex>
       </SectionCommon>
       <Separator size="4" />
       <SectionCommon>
         <ul className={styles.detailsList}>
-          {details.map((text, index) => (
+          {vacancyDetails.map((text, index) => (
             <li key={index}>
               <CheckIcon />
               <Text
