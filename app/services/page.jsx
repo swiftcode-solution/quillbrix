@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Flex, Separator, Text } from "@radix-ui/themes";
+import { Button, Flex, Separator, Text } from "@radix-ui/themes";
 import SectionCommon from "@/components/SectionCommon";
 import ButtonCommon from "@/components/ButtonCommon";
 import HeadingCommon from "@/components/HeadingCommon";
@@ -37,12 +37,18 @@ function Services() {
             DevOps, and Hosting Solutions.
           </Text>
           <Flex gap="5" wrap="wrap" justify="center">
-            <ButtonCommon>
+            <ButtonCommon asChild>
               <Link href="/contact-us">Become a Client</Link>
             </ButtonCommon>
-            <ButtonCommon variant="outline" className={styles.joinButton}>
+            <Button
+              radius="full"
+              asChild
+              variant="outline"
+              size="4"
+              className={styles.joinButton}
+            >
               <Link href="/career">Join Our Team</Link>
-            </ButtonCommon>
+            </Button>
           </Flex>
           <Separator size="4" mt="7" />
           <Flex
@@ -156,7 +162,7 @@ function Services() {
                 mobile app, or optimize your development processes, we have the
                 expertise to bring your vision to life.
               </Text>
-              <ButtonCommon>
+              <ButtonCommon asChild>
                 <Link href="/career">Join Our Team</Link>
               </ButtonCommon>
             </Flex>

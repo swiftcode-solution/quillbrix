@@ -5,7 +5,6 @@ import styles from "./buttonCommon.module.scss";
 function ButtonCommon({ children, className, ...props }) {
   return (
     <Button
-      asChild
       radius="full"
       size="4"
       className={classNames(styles.button, className)}

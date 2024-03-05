@@ -1,6 +1,8 @@
 import { Flex, Heading, Separator, Text } from "@radix-ui/themes";
+import Link from "next/link";
 import SectionCommon from "@/components/SectionCommon";
-import CheckIcon from "@/public/assets/CheckIcon";
+import ButtonCommon from "@/components/ButtonCommon";
+import CheckIcon from "@/public/assets/icons/CheckIcon";
 import { vacanyList } from "../career.info";
 import { vacancyDetails } from "./details.info";
 import styles from "./details.module.scss";
@@ -55,6 +57,9 @@ function VacancyDetails({ params }) {
             </li>
           ))}
         </ul>
+        <ButtonCommon asChild>
+          <Link href="/contact-us">I&apos;m Interested</Link>
+        </ButtonCommon>
       </SectionCommon>
     </main>
   );

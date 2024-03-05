@@ -20,7 +20,6 @@
 
 .mobileDrawer {
   $height: calc(100dvh - var(--main-nav-height));
-
   position: fixed;
   width: 100%;
   right: 0;

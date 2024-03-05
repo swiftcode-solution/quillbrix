@@ -1,13 +1,10 @@
-"use client";
-
 import Link from "next/link";
 import { Flex, Grid, Separator, Text } from "@radix-ui/themes";
-import * as Accordion from "@radix-ui/react-accordion";
 import SectionCommon from "@/components/SectionCommon";
 import ButtonCommon from "@/components/ButtonCommon";
 import HeadingCommon from "@/components/HeadingCommon";
-import AccordionCommon from "@/components/AccordionCommon";
-import { cardInfo, servicesInfo } from "./_components/home/homepage.info";
+import ServiceAccordion from "./_components/home/ServiceAccordion";
+import { cardInfo } from "./_components/home/homepage.info";
 import CardCommon from "./_components/home/CardCommon";
 import styles from "../app/_components/home/home.module.scss";
 
@@ -41,8 +38,8 @@ function Home() {
             We offer a comprehensive suite of IT services designed to elevate
             your digital presence and drive success in the online landscape.
           </Text>
-          <ButtonCommon className={styles.clientButton}>
-            <Link href="/">Become a Client</Link>
+          <ButtonCommon className={styles.clientButton} asChild>
+            <Link href="/contact-us">Become a Client</Link>
           </ButtonCommon>
         </Flex>
       </SectionCommon>
@@ -51,12 +48,16 @@ function Home() {
           <Flex justify="between" direction={{ initial: "column", sm: "row" }}>
             <Flex direction="column" gap="9">
               <HeadingCommon>OUR SERVICE</HeadingCommon>
-              <ButtonCommon>
+              <ButtonCommon asChild>
                 <Link href="/services">Explore More</Link>
               </ButtonCommon>
               <img src="/home/home-page-1.png" height={300} alt="home-page" />
             </Flex>
-            <Flex direction="column" className={styles.accordionSection}>
+            <Flex
+              direction="column"
+              className={styles.accordionSection}
+              gap="9"
+            >
               <Text
                 as="p"
                 size="5"
@@ -70,15 +71,7 @@ function Home() {
                 meets excellence. We are your one-stop destination for
                 transformative IT solutions.
               </Text>
-              <Accordion.Root collapsible>
-                {servicesInfo.map(({ title, content }, index) => (
-                  <AccordionCommon
-                    title={title}
-                    content={content}
-                    key={index}
-                  />
-                ))}
-              </Accordion.Root>
+              <ServiceAccordion />
             </Flex>
           </Flex>
         </SectionCommon>

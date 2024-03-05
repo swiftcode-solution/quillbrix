@@ -84,7 +84,7 @@ function AboutUs() {
               gap="8"
             >
               <img src="/aboutUs/about-us-2.png" height="400" alt="about-us" />
-              <ButtonCommon style={{ alignSelf: "end" }}>
+              <ButtonCommon asChild style={{ alignSelf: "end" }}>
                 <Link href="/career">Become a Client</Link>
               </ButtonCommon>
             </Flex>

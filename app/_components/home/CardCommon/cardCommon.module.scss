@@ -2,5 +2,12 @@
   max-width: 500px;
   background-color: var(--gray-4);
   border: none;
-  box-shadow: 5px 6px 7px 1px rgba(209, 209, 209, 0.4);
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px 0px #00000026;
+
+  svg {
+    height: 3em;
+    width: 3em;
+    vertical-align: middle;
+  }
 }

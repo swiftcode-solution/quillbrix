@@ -16,7 +16,13 @@ function Career() {
             direction={{ initial: "column", sm: "row" }}
           >
             <HeadingCommon>JOIN OUR TEAM AT QUILLBRIX</HeadingCommon>
-            <Text size="7" align="center">
+            <Text
+              size={{
+                initial: "5",
+                sm: "6",
+              }}
+              align="center"
+            >
               Explore Opportunities in Web Development, Web Design, Mobile
               Development, DevOps, and Hosting Solutions.
             </Text>
@@ -31,7 +37,13 @@ function Career() {
       <SectionCommon>
         <Flex direction="column" width="100%" align="center" gap="5" mb="9">
           <HeadingCommon>EXPLORE OPENINGS</HeadingCommon>
-          <Text size="6" align="center">
+          <Text
+            align="center"
+            size={{
+              initial: "5",
+              sm: "6",
+            }}
+          >
             Explore Opportunities in Web Development, Web Design, Mobile
             Development, DevOps, and Hosting Solutions.
           </Text>

@@ -31,7 +31,7 @@ function AccordionCommon({ title, content }) {
           {content}
         </Text>
       </AccordionContent>
-      <Separator size="4" />
+      <Separator size="4" style={{ marginTop: "10px" }} />
     </AccordionItem>
   );
 }

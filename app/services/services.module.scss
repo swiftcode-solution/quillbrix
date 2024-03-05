@@ -3,9 +3,9 @@
 }
 
 .joinButton {
-  a {
-    color: var(--accent-color);
-  }
+  color: var(--blue-11) !important;
+  width: fit-content;
+  cursor: pointer;
 }
 
 .paragraph {

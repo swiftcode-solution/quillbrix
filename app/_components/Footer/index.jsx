@@ -25,9 +25,9 @@ function Footer() {
               <HeadingCommon className={styles.contactHeading} align="start">
                 CONTACT
                 <br />
-                TODAY .
+                TODAY.
               </HeadingCommon>
-              <ButtonCommon>
+              <ButtonCommon asChild>
                 <Link href={`mailto:${email}`}>{email}</Link>
               </ButtonCommon>
             </Flex>
@@ -37,6 +37,7 @@ function Footer() {
                 {pageLinks.map(({ title, href }, index) => (
                   <ButtonCommon
                     variant="outline"
+                    asChild
                     key={index}
                     className={styles.pageLinks}
                   >

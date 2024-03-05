@@ -1,7 +1,7 @@
-import BalanceIcon from "@/public/assets/BalanceIcon";
-import ClockIcon from "@/public/assets/ClockIcon";
-import SmileIcon from "@/public/assets/SmileIcon";
-import TeamIcon from "@/public/assets/TeamIcon";
+import BalanceIcon from "@/public/assets/icons/BalanceIcon";
+import ClockIcon from "@/public/assets/icons/ClockIcon";
+import SmileIcon from "@/public/assets/icons/SmileIcon";
+import TeamIcon from "@/public/assets/icons/TeamIcon";
 
 export const vacanyList = [
   {
@@ -11,13 +11,13 @@ export const vacanyList = [
     id: "1",
   },
   {
-    title: "Senior Fullstack Developer",
+    title: "Senior Blockchain Developer",
     duration: "2+ Years",
     number: "2",
     id: "2",
   },
   {
-    title: "Junior Frontend Developer",
+    title: "Senior Blockchain Developer",
     duration: "2+ Years",
     number: "2",
     id: "3",

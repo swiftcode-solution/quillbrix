@@ -1,6 +1,6 @@
-import Facebook from "@/public/assets/Facebook";
-import Linkedin from "@/public/assets/Linkedin";
-import Twitter from "@/public/assets/Twitter";
+import Facebook from "@/public/assets/icons/Facebook";
+import Linkedin from "@/public/assets/icons/Linkedin";
+import Twitter from "@/public/assets/icons/Twitter";
 
 export const pageLinks = [
   {

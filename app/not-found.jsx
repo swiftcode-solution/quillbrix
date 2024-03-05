@@ -14,7 +14,7 @@ function Error() {
         <Text align="center" size="6">
           WE CAN&apos;T SEEM TO FIND THE PAGE YOU ARE LOOKING FOR
         </Text>
-        <ButtonCommon>
+        <ButtonCommon asChild>
           <Link href="/">Back Home</Link>
         </ButtonCommon>
       </Flex>

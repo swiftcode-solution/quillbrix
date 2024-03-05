@@ -1,9 +1,10 @@
 .button {
   width: fit-content;
   cursor: pointer;
-  color: var(--color-background);
+  color: var(--color-background) !important;
+
   a {
     text-decoration: none;
-    color: var(--color-background);
+    color: var(--color-background) !important;
   }
 }

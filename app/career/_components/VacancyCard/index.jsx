@@ -1,28 +1,28 @@
 import Link from "next/link";
-import { Card, Flex, Text } from "@radix-ui/themes";
+import { Flex, Text } from "@radix-ui/themes";
 import ButtonCommon from "@/components/ButtonCommon";
 import styles from "./vacancyCard.module.scss";
 
 function VacancyCard({ title, duration, number, id }) {
   return (
-    <Card className={styles.card}>
-      <Flex
-        direction="column"
-        gap="5"
-        style={{ padding: "10px 30px 10px 10px" }}
-      >
-        <Text size="7">{title}</Text>
-        <Text size="5">
-          <Text weight="medium">Experience : </Text> {duration}
-        </Text>
-        <Text size="5">
-          <Text weight="medium">No. of Vacancies : </Text> {number}
-        </Text>
-        <ButtonCommon>
+    <div className={styles.card}>
+      <Flex direction="column" gap="6">
+        <Text size="8">{title}</Text>
+        <Flex direction="column" gap="3">
+          <Text size="6" className={styles.title}>
+            <Text weight="medium">Experience :&nbsp;</Text>
+            {duration}
+          </Text>
+          <Text size="6" className={styles.title}>
+            <Text weight="medium">No. of Vacancies :&nbsp;</Text>
+            {number}
+          </Text>
+        </Flex>
+        <ButtonCommon asChild>
           <Link href={`/career/${id}`}>Apply Now</Link>
         </ButtonCommon>
       </Flex>
-    </Card>
+    </div>
   );
 }
 

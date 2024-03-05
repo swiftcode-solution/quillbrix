@@ -6,16 +6,15 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Button, Container, Flex } from "@radix-ui/themes";
 import { useClickAway } from "react-use";
 import ButtonCommon from "@/components/ButtonCommon";
-import Hamburger from "@/public/assets/Hamburger";
+import Hamburger from "@/public/assets/icons/Hamburger";
 import SectionCommon from "@/components/SectionCommon";
-import CloseIcon from "@/public/assets/CloseIcon";
+import CloseIcon from "@/public/assets/icons/CloseIcon";
 import LinkList from "./LinkList";
 import NavDrawer from "./NavDrawer";
 import styles from "./header.module.scss";
 
+const logoHeight = "45px";
 function Header() {
-  const logoHeight = "45px";
-
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const navDrawerRef = useRef();
 
@@ -55,7 +54,7 @@ function Header() {
           </Link>
           <LinkList />
           <Flex display={{ initial: "none", sm: "flex" }}>
-            <ButtonCommon>
+            <ButtonCommon asChild>
               <Link href="/contact-us">LET&apos;S TALK</Link>
             </ButtonCommon>
           </Flex>
