@@ -1,11 +1,20 @@
+@use "/styles/media.scss" as *;
+
 .homeParagraph {
-  max-width: 600px;
+  max-width: 700px;
   letter-spacing: 1px;
   text-align: justify;
 }
 
 .clientButton {
-  padding: 35px 80px;
+  padding: 45px 80px;
+  font-size: 40px;
+
+  @include media("<=sm") {
+    font-size: 20px;
+    padding: 10px 25px;
+    margin-bottom: 30px;
+  }
 }
 
 .serviceSection {
@@ -13,10 +22,27 @@
 }
 
 .accordionSection {
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .homepageTitle {
-  max-width: 700px;
   line-height: 1.4;
+}
+
+.smallSection {
+  max-width: 1220px !important;
+}
+
+.serviceParagraph {
+  max-width: 700px;
+}
+
+.exploreButton {
+  font-size: 40px;
+  padding: 40px;
+
+  @include media("<=sm") {
+    font-size: 20px;
+    padding: 10px 25px;
+  }
 }

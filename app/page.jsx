@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Flex, Grid, Separator, Text } from "@radix-ui/themes";
 import SectionCommon from "@/components/SectionCommon";
+import Round from "@/public/assets/icons/Round";
 import ButtonCommon from "@/components/ButtonCommon";
 import HeadingCommon from "@/components/HeadingCommon";
 import ServiceAccordion from "./_components/home/ServiceAccordion";
@@ -11,10 +12,19 @@ import styles from "../app/_components/home/home.module.scss";
 function Home() {
   return (
     <main>
-      <SectionCommon>
-        <Flex mt="9" direction="column" width="100%" align="center">
+      <SectionCommon className={styles.smallSection}>
+        <Flex
+          direction="column"
+          width="100%"
+          align="center"
+          mt={{ initial: "9", sm: "0" }}
+        >
           <HeadingCommon className={styles.homepageTitle}>
-            VERSATILE EXPERTISE TO MEET YOUR UNIQUE BUSINESS NEEDS
+            VERSATILE EXPERTISE
+            <br />
+            TO MEET YOUR <br />
+            UNIQUE BUSINESS NEEDS
+            <Round size="20" style={{ marginLeft: "12px" }} />
           </HeadingCommon>
         </Flex>
         <Separator size="4" mt="9" mb="9" />
@@ -23,7 +33,7 @@ function Home() {
             initial: "center",
             sm: "end",
           }}
-          justify="between"
+          justify="start"
           gap="9"
           direction={{ initial: "column", sm: "row" }}
         >
@@ -45,13 +55,28 @@ function Home() {
       </SectionCommon>
       <div className={styles.serviceSection}>
         <SectionCommon>
-          <Flex justify="between" direction={{ initial: "column", sm: "row" }}>
-            <Flex direction="column" gap="9">
-              <HeadingCommon>OUR SERVICE</HeadingCommon>
-              <ButtonCommon asChild>
+          <Flex
+            justify="between"
+            direction={{ initial: "column", md: "row" }}
+            align={{ initial: "center", md: "start" }}
+          >
+            <Flex direction="column" gap={{ initial: "7", sm: "9" }} mt="5">
+              <HeadingCommon align="left">
+                OUR SERVICE
+                <Round size="20" style={{ marginLeft: "12px" }} />
+              </HeadingCommon>
+              <ButtonCommon
+                asChild
+                mt={{ initial: "0", sm: "6" }}
+                className={styles.exploreButton}
+              >
                 <Link href="/services">Explore More</Link>
               </ButtonCommon>
-              <img src="/home/home-page-1.png" height={300} alt="home-page" />
+              <img
+                src="/home/home-page-1.png"
+                alt="home-page"
+                style={{ maxWidth: "90vw" }}
+              />
             </Flex>
             <Flex
               direction="column"
@@ -60,10 +85,9 @@ function Home() {
             >
               <Text
                 as="p"
-                size="5"
+                size={{ initial: "6", sm: "8" }}
                 mt={{
-                  initial: "8",
-                  sm: "0",
+                  initial: "7",
                 }}
                 className={styles.homeParagraph}
               >
@@ -77,9 +101,12 @@ function Home() {
         </SectionCommon>
       </div>
       <SectionCommon>
-        <Flex direction="column" align="center" gap="7" mt="7">
-          <HeadingCommon>OUR EXPERTISE</HeadingCommon>
-          <Text size="5" align="center">
+        <Flex direction="column" align="center" gap="9" mt="7">
+          <HeadingCommon>
+            OUR EXPERTISE
+            <Round size="20" style={{ marginLeft: "8px" }} />
+          </HeadingCommon>
+          <Text size="8" align="center" className={styles.serviceParagraph}>
             Our commitment to excellence is reflected in our diverse range of
             expertise.
           </Text>

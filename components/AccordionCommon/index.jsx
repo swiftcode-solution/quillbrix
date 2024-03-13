@@ -1,33 +1,23 @@
-import { useState } from "react";
 import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@radix-ui/react-accordion";
 import { Flex, Separator, Text } from "@radix-ui/themes";
+import ArrowIcon from "@/public/assets/icons/ArrowIcon";
 import styles from "./accordionCommon.module.scss";
 
 function AccordionCommon({ title, content }) {
-  const [values, setValues] = useState("+");
-
-  const handleToggle = () => {
-    setValues(prevValue => (prevValue === "+" ? "-" : "+"));
-  };
-
   return (
     <AccordionItem value={title}>
-      <AccordionTrigger
-        className={styles.accordionTrigger}
-        asChild
-        onClick={handleToggle}
-      >
+      <AccordionTrigger className={styles.accordionTrigger} asChild>
         <Flex width="100%" justify="between" align="center">
-          <Text size="7">{title}</Text>
-          <Text size="7">{values}</Text>
+          <Text weight="medium">{title}</Text>
+          <ArrowIcon size="25" />
         </Flex>
       </AccordionTrigger>
       <AccordionContent className={styles.accordionContent}>
-        <Text as="p" size="5">
+        <Text as="p" size={{ initial: "5", sm: "7" }}>
           {content}
         </Text>
       </AccordionContent>

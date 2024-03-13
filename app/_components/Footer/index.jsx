@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Flex, Separator, Text } from "@radix-ui/themes";
+import { Button, Flex, Separator, Text } from "@radix-ui/themes";
 import HeadingCommon from "@/components/HeadingCommon";
 import ButtonCommon from "@/components/ButtonCommon";
 import SectionCommon from "@/components/SectionCommon";
@@ -27,9 +27,9 @@ function Footer() {
                 <br />
                 TODAY.
               </HeadingCommon>
-              <ButtonCommon asChild>
+              <Button radius="full" asChild className={styles.emailButton}>
                 <Link href={`mailto:${email}`}>{email}</Link>
-              </ButtonCommon>
+              </Button>
             </Flex>
             <Flex direction="column" gap="5">
               <Text>Quick Links</Text>

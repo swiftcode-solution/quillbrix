@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { Button, Flex, Separator, Text } from "@radix-ui/themes";
+import classNames from "classnames";
 import SectionCommon from "@/components/SectionCommon";
 import ButtonCommon from "@/components/ButtonCommon";
 import HeadingCommon from "@/components/HeadingCommon";
+import Round from "@/public/assets/icons/Round";
 import { servicesInfo } from "../_components/home/homepage.info";
 import styles from "./services.module.scss";
 
@@ -19,16 +21,17 @@ function Services() {
           gap="8"
         >
           <HeadingCommon
-            style={{ maxWidth: "900px" }}
+            style={{ maxWidth: "1100px" }}
             className={styles.heading}
           >
             LET&apos;S FORGE DIGITAL EXCELLENCE TOGETHER
+            <Round size="12" style={{ marginLeft: "12px" }} />
           </HeadingCommon>
           <Text
-            style={{ maxWidth: "900px" }}
+            style={{ maxWidth: "1000px" }}
             size={{
               initial: "6",
-              xs: "7",
+              xs: "8",
             }}
             align="center"
           >
@@ -37,7 +40,7 @@ function Services() {
             DevOps, and Hosting Solutions.
           </Text>
           <Flex gap="5" wrap="wrap" justify="center">
-            <ButtonCommon asChild>
+            <ButtonCommon asChild className={styles.clientButton}>
               <Link href="/contact-us">Become a Client</Link>
             </ButtonCommon>
             <Button
@@ -62,35 +65,30 @@ function Services() {
             <img
               alt="services"
               src="/services/service-logo-1.png"
-              height={50}
-              width={150}
+              height={70}
+              width={200}
             />
             <img
               alt="services"
               src="/services/service-logo-2.png"
-              height={50}
-              width={150}
+              height={70}
+              width={200}
             />
             <img
               alt="services"
               src="/services/service-logo-1.png"
-              height={50}
-              width={150}
+              height={70}
+              width={200}
             />
           </Flex>
         </Flex>
       </SectionCommon>
       <SectionCommon>
-        <Flex
-          gap="9"
-          justify="between"
-          direction={{ initial: "column", md: "row" }}
-        >
+        <Flex justify="between" direction={{ initial: "column", md: "row" }}>
           <img
             src="/services/service-image.png"
             alt="services"
-            height={400}
-            style={{ maxWidth: "500px", alignSelf: "center" }}
+            style={{ maxWidth: "90vw", alignSelf: "start" }}
           />
           <Flex
             direction="column"
@@ -108,7 +106,7 @@ function Services() {
                       initial: "8",
                       sm: "9",
                     }}
-                    weight="light"
+                    weight="medium"
                   >
                     {title.toUpperCase()}
                   </Text>
@@ -117,6 +115,8 @@ function Services() {
                       initial: "6",
                       sm: "7",
                     }}
+                    className="grayText"
+                    style={{ letterSpacing: "1px" }}
                   >
                     {content}
                   </Text>
@@ -130,13 +130,13 @@ function Services() {
       <div className={styles.serviceSection}>
         <SectionCommon>
           <Flex direction="column" gap="5" align="center" mt="9">
-            <HeadingCommon>
+            <HeadingCommon align="left">
               READY TO TRANSFORM YOUR DIGITAL PRESENCE?
             </HeadingCommon>
             <Separator size="4" />
             <Flex
               gap="9"
-              align="end"
+              align={{ initial: "start", sm: "end" }}
               justify="between"
               width="100%"
               direction={{
@@ -148,14 +148,14 @@ function Services() {
                 as="p"
                 size={{
                   initial: "6",
-                  xs: "7",
+                  xs: "8",
                 }}
                 mt={{
                   initial: "8",
                   sm: "0",
                 }}
                 align="center"
-                className={styles.paragraph}
+                className={classNames(styles.paragraph, "grayText")}
               >
                 QuillBrix is your partner in digital innovation. Whether
                 you&apos;re looking to revamp your website, create a stunning

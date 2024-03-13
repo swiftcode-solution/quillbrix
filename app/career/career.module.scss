@@ -1,0 +1,16 @@
+@use "/styles/media.scss" as *;
+
+.noVacancySection {
+  img {
+    max-width: 90vw;
+  }
+
+  svg {
+    height: 100px;
+    width: 100px;
+    @include media("<=sm") {
+      height: 35px;
+      width: 35px;
+    }
+  }
+}

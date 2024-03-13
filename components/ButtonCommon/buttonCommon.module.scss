@@ -1,10 +1,13 @@
 .button {
   width: fit-content;
   cursor: pointer;
-  color: var(--color-background) !important;
+  background-color: #084678 !important;
+
+  &:hover {
+    background-color: black !important;
+  }
 
   a {
     text-decoration: none;
-    color: var(--color-background) !important;
   }
 }

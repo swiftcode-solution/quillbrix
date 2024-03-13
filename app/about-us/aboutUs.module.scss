@@ -1,3 +1,15 @@
+@use "../../styles/media.scss" as *;
+
 .serviceSection {
   background-color: var(--gray-4);
+}
+
+.roundIcon {
+  height: 80px;
+  width: 80px;
+
+  @include media("<=md") {
+    height: 30px;
+    width: 30px;
+  }
 }

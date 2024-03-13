@@ -3,6 +3,7 @@ import Link from "next/link";
 import SectionCommon from "@/components/SectionCommon";
 import ButtonCommon from "@/components/ButtonCommon";
 import CheckIcon from "@/public/assets/icons/CheckIcon";
+import Round from "@/public/assets/icons/Round";
 import { vacanyList } from "../career.info";
 import { vacancyDetails } from "./details.info";
 import styles from "./details.module.scss";
@@ -24,6 +25,7 @@ function VacancyDetails({ params }) {
             }}
           >
             {vacancyData.title}
+            <Round size="20" style={{ marginLeft: "12px" }} />
           </Heading>
           <Text size="6">
             <Text mr="6" weight="medium">

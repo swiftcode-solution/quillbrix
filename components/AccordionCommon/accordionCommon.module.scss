@@ -1,9 +1,32 @@
+@use "../../styles/media.scss" as *;
+
 .accordionTrigger {
   border: none;
   background: none;
   padding: 20px 0px;
   margin-top: 10px;
   cursor: pointer;
+  span {
+    font-size: 40px;
+
+    @include media("<=sm") {
+      font-size: 20px;
+    }
+
+    @include media("<=md") {
+      font-size: 30px;
+    }
+  }
+
+  svg {
+    transition: transform 0.3s ease;
+  }
+}
+
+.accordionTrigger[data-state="open"] {
+  svg {
+    transform: rotate(180deg);
+  }
 }
 
 .accordionContent {

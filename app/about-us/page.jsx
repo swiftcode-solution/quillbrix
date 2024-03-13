@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { Flex, Heading, Separator, Text } from "@radix-ui/themes";
+import { Flex, Separator, Text } from "@radix-ui/themes";
 import SectionCommon from "@/components/SectionCommon";
 import HeadingCommon from "@/components/HeadingCommon";
+import Round from "@/public/assets/icons/Round";
 import ButtonCommon from "@/components/ButtonCommon";
 import styles from "./aboutUs.module.scss";
 
@@ -11,32 +12,46 @@ function AboutUs() {
       <SectionCommon>
         <Flex direction="column" gap="7">
           <Flex
-            justify="between"
-            gap="9"
+            gap="1"
             direction={{
               initial: "column",
-              sm: "row",
+              md: "row",
             }}
           >
-            <HeadingCommon>LET&apos;S FORGE DIGITAL EXCELLENCE</HeadingCommon>
+            <HeadingCommon align="left">
+              LET&apos;S FORGE
+              <Round
+                className={styles.roundIcon}
+                style={{ marginLeft: "15px" }}
+              />
+              <br />
+              DIGITAL EXCELLENCE
+            </HeadingCommon>
             <Text
               size={{
                 initial: "6",
                 sm: "7",
               }}
-              align="center"
-              style={{ maxWidth: "500px" }}
+              mt={{ initial: "6", sm: "3" }}
+              align={{ initial: "left", sm: "right" }}
+              style={{ maxWidth: "400px", letterSpacing: "2px" }}
             >
               We are digital architects passionate about transforming ideas into
               exceptional digital experiences.
             </Text>
           </Flex>
-          <img
-            src="/aboutUs/about-us-1.png"
-            alt="about-us"
-            width="500"
-            style={{ alignSelf: "end" }}
-          />
+          <Flex justify="end" align="end">
+            <Round
+              fill="#F5F5F5"
+              className={styles.roundIcon}
+              style={{ marginLeft: "12px" }}
+            />
+            <img
+              src="/aboutUs/about-us-1.png"
+              alt="about-us"
+              style={{ alignSelf: "end", maxWidth: "90vw" }}
+            />
+          </Flex>
         </Flex>
       </SectionCommon>
       <div className={styles.serviceSection}>
@@ -45,31 +60,24 @@ function AboutUs() {
             <Flex
               justify="between"
               align="center"
-              gap={{
-                initial: "7",
-                sm: "9",
-              }}
+              gap={{ initial: "8", sm: "0" }}
               direction={{
                 initial: "column",
                 sm: "row",
               }}
             >
-              <Heading
-                size={{
-                  initial: "8",
-                  sm: "9",
-                }}
-              >
+              <HeadingCommon weight="medium">
                 OUR MISSION
-              </Heading>
-              <Separator size="4" />
+                <Round size="20" style={{ marginLeft: "12px" }} />
+              </HeadingCommon>
+              <Separator size="3" style={{ height: "2px" }} />
               <Text
                 size={{
                   initial: "6",
-                  sm: "7",
+                  sm: "8",
                 }}
-                style={{ maxWidth: "500px" }}
-                align="center"
+                style={{ maxWidth: "400px" }}
+                align="left"
               >
                 Our mission at QuillBrix is clear – to empower businesses with
                 the digital tools they need to succeed.
@@ -83,7 +91,7 @@ function AboutUs() {
               }}
               gap="8"
             >
-              <img src="/aboutUs/about-us-2.png" height="400" alt="about-us" />
+              <img src="/aboutUs/about-us-2.png" alt="about-us" />
               <ButtonCommon asChild style={{ alignSelf: "end" }}>
                 <Link href="/career">Become a Client</Link>
               </ButtonCommon>
