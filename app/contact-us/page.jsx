@@ -1,4 +1,4 @@
-import { Heading, Text } from "@radix-ui/themes";
+import { Heading, Separator, Text } from "@radix-ui/themes";
 import Round from "@/public/assets/icons/Round";
 import SectionCommon from "@/components/SectionCommon";
 import ContactForm from "./ContactForm";
@@ -19,6 +19,7 @@ function ContactUs() {
           Have a specific inquiry? Fill out the form below, and we&apos;ll get
           back to you as soon as possible.
         </Text>
+        <Separator size="4" mt="8" style={{ height: "2px" }} />
         <ContactForm />
       </SectionCommon>
     </main>

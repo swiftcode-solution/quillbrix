@@ -22,6 +22,7 @@ function Career() {
               <Round size="20" style={{ marginLeft: "12px" }} />
             </HeadingCommon>
             <Text
+              className="grayText"
               size={{
                 initial: "6",
                 sm: "8",
@@ -53,6 +54,7 @@ function Career() {
           <HeadingCommon>EXPLORE OPENINGS</HeadingCommon>
           <Text
             align="center"
+            className="grayText"
             size={{
               initial: "6",
               sm: "7",
@@ -84,11 +86,10 @@ function Career() {
                 initial: "1",
                 sm: "2",
               }}
-              width="100%"
-              gap="9"
-              mt="9"
-              justify="center"
-              align="center"
+              gap={{
+                initial: "4",
+                sm: "9",
+              }}
             >
               {vacanyList.map(({ title, duration, number, id }, index) => (
                 <VacancyCard

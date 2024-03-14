@@ -1,3 +1,5 @@
+@use "./media.scss" as *;
+
 body {
   margin: 0px;
 }
@@ -8,4 +10,15 @@ body {
 
 .grayText {
   color: #3d3d3d;
+}
+
+.buttonStyles {
+  width: fit-content;
+  font-size: 35px;
+  padding: 35px;
+
+  @include media("<=sm") {
+    font-size: 20px;
+    padding: 25px;
+  }
 }

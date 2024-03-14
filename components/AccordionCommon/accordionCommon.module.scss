@@ -20,12 +20,13 @@
 
   svg {
     transition: transform 0.3s ease;
+    transform: rotate(180deg);
   }
 }
 
 .accordionTrigger[data-state="open"] {
   svg {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
   }
 }
 

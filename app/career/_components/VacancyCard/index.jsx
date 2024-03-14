@@ -6,7 +6,7 @@ import styles from "./vacancyCard.module.scss";
 function VacancyCard({ title, duration, number, id }) {
   return (
     <div className={styles.card}>
-      <Flex direction="column" gap="6">
+      <Flex direction="column" gap="8" p="5">
         <Text size="8">{title}</Text>
         <Flex direction="column" gap="3">
           <Text size="6" className={styles.title}>

@@ -40,7 +40,7 @@ function Services() {
             DevOps, and Hosting Solutions.
           </Text>
           <Flex gap="5" wrap="wrap" justify="center">
-            <ButtonCommon asChild className={styles.clientButton}>
+            <ButtonCommon asChild className="buttonStyles">
               <Link href="/contact-us">Become a Client</Link>
             </ButtonCommon>
             <Button
@@ -154,7 +154,7 @@ function Services() {
                   initial: "8",
                   sm: "0",
                 }}
-                align="center"
+                align={{ initial: "left", sm: "center" }}
                 className={classNames(styles.paragraph, "grayText")}
               >
                 QuillBrix is your partner in digital innovation. Whether
@@ -162,7 +162,7 @@ function Services() {
                 mobile app, or optimize your development processes, we have the
                 expertise to bring your vision to life.
               </Text>
-              <ButtonCommon asChild>
+              <ButtonCommon asChild className="buttonStyles">
                 <Link href="/career">Join Our Team</Link>
               </ButtonCommon>
             </Flex>

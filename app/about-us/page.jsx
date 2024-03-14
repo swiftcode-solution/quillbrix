@@ -93,7 +93,7 @@ function AboutUs() {
             >
               <img src="/aboutUs/about-us-2.png" alt="about-us" />
               <ButtonCommon asChild style={{ alignSelf: "end" }}>
-                <Link href="/career">Become a Client</Link>
+                <Link href="/contact-us">Become a Client</Link>
               </ButtonCommon>
             </Flex>
           </Flex>

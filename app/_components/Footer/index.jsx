@@ -27,7 +27,7 @@ function Footer() {
                 <br />
                 TODAY.
               </HeadingCommon>
-              <Button radius="full" asChild className={styles.emailButton}>
+              <Button radius="full" asChild className="buttonStyles">
                 <Link href={`mailto:${email}`}>{email}</Link>
               </Button>
             </Flex>

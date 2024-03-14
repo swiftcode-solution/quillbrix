@@ -14,7 +14,7 @@
 
   @include media("<=sm") {
     font-size: 20px;
-    padding: 10px 25px;
+    padding: 25px;
   }
 }
 
@@ -24,14 +24,4 @@
 
 .serviceSection {
   background-color: var(--gray-4);
-}
-
-.clientButton {
-  font-size: 35px;
-  padding: 35px;
-
-  @include media("<=sm") {
-    font-size: 20px;
-    padding: 10px 25px;
-  }
 }
