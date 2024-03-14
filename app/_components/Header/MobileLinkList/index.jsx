@@ -37,7 +37,7 @@ function MobileLinkList() {
         <Flex gap="5" justify="center" mt="5">
           {socialLinks.map(({ title: Icon, href }, index) => (
             <Link key={index} href={href}>
-              <Icon size={40} />
+              <Icon size={40} stroke="#111111" />
             </Link>
           ))}
         </Flex>

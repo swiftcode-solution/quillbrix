@@ -47,10 +47,10 @@ function Footer() {
               </Flex>
               <Separator className={styles.separator} size="4" />
               <Text>Connect With Us</Text>
-              <Flex gap="5" className={styles.socialIcons}>
+              <Flex gap="5">
                 {socialLinks.map(({ title: Icon, href }, index) => (
                   <Link key={index} href={href}>
-                    <Icon size={40} />
+                    <Icon size={40} stroke="#F5F5F5" />
                   </Link>
                 ))}
               </Flex>
