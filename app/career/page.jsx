@@ -60,8 +60,17 @@ function Career() {
               sm: "7",
             }}
           >
-            Explore Opportunities in Web Development, Web Design, Mobile
-            Development, DevOps, and Hosting Solutions.
+            <Text
+              size={{
+                initial: "6",
+                sm: "7",
+              }}
+              align="center"
+              className="grayText"
+            >
+              Explore Opportunities in Web Development, Web Design, Mobile
+              Development, DevOps, and Hosting Solutions.
+            </Text>
           </Text>
           {vacanyList.length === 0 ? (
             <Flex align="center" mt="9" className={styles.noVacancySection}>

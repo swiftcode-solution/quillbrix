@@ -6,14 +6,14 @@ import styles from "./vacancyCard.module.scss";
 function VacancyCard({ title, duration, number, id }) {
   return (
     <div className={styles.card}>
-      <Flex direction="column" gap="8" p="5">
-        <Text size="8">{title}</Text>
+      <Flex direction="column" gap="8" p={{ initial: "0", sm: "5" }}>
+        <Text size={{ initial: "6", xs: "8" }}>{title}</Text>
         <Flex direction="column" gap="3">
-          <Text size="6" className={styles.title}>
+          <Text size={{ initial: "5", xs: "6" }} className={styles.title}>
             <Text weight="medium">Experience :&nbsp;</Text>
             {duration}
           </Text>
-          <Text size="6" className={styles.title}>
+          <Text size={{ initial: "5", xs: "6" }} className={styles.title}>
             <Text weight="medium">No. of Vacancies :&nbsp;</Text>
             {number}
           </Text>
